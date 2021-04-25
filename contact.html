@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Benedict Cumberbatch - Contact</title>
+  <style>
+    * {
+      box-sizing:border-box;
+    }
+    body, html {
+      height: 100%;
+    }
+    body {
+      background-image: url(images/photoshopped-mobile.jpg);
+      background-position: bottom right;
+      max-width: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .div {
+      padding-left:70px;
+      padding-top: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .h1 {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 80px;
+      font-weight: lighter;
+    }
+    .pp {
+      color: #a19e9e;
+      font-size: 19px;
+    }
+    .form {
+      color: white;
+      font-size: 16px;
+      width: 620px;
+    }
+    .label {
+      font-weight: lighter;
+    }
+    .box{
+      height: 30px;
+      background-color: rgb(24, 23, 23);
+      color: white;
+      border: none;
+    }
+    .textarea{
+      background-color: rgb(24, 23, 23);
+      color: white;
+      border: none;
+      height: 90px;
+    }    
+    input[type=text], input[type=email], textarea {
+      padding: 10px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    input[type=submit], input[type=reset] {
+      background-color: rgb(24, 23, 23);
+      border: none;
+      border-radius: 8px;
+      color: rgb(209, 128, 23);
+      height: 40px;
+      width: 100px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    @media screen and (max-width: 350px) {
+      body {
+        background-position-y: 180px;
+        background-position-x: 10px;
+        background-size: 100%;
+      }
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+      .topnav {
+        background-color: black;
+      }
+      .div {
+        padding-top: 5px;
+        padding-left:20px;
+      }
+      .h1 {
+        font-size: 50px;
+      }
+      .pp {
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.555);
+      }
+      .form {
+        font-size: 17px;
+        width: 320px;
+        background-color: rgba(0, 0, 0, 0.555);
+      }
+      input[type=text], input[type=email], textarea {
+        width: 90%;
+        font-size: 15px;
+      }
+      input[type=submit], input[type=reset] {
+        height: 30px;
+        width: 90px;
+        font-size: 20px;
+      }
+    }
+    @media screen and (min-width: 351px) and (max-width: 404px) {
+      body {
+        background-position-y: 180px;
+        background-position-x: -50px;
+      }
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+      .topnav {
+        background-color: black;
+      }
+      .div {
+        padding-top: 5px;
+        padding-left:20px;
+      }
+      .h1 {
+        font-size: 50px;
+      }
+      .pp {
+        width: 320px;
+        background-color: rgba(0, 0, 0, 0.555);
+      }
+      .form {
+        font-size: 17px;
+        width: 350px;
+        background-color: rgba(0, 0, 0, 0.555);
+      }
+      input[type=text], input[type=email], textarea {
+        width: 90%;
+        font-size: 15px;
+      }
+      input[type=submit], input[type=reset] {
+        height: 30px;
+        width: 90px;
+        font-size: 20px;
+      }
+    }
+    @media screen and (min-width: 405px) and (max-width: 500px) {
+      body {
+        background-position-y: 180px;
+      }
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+      .topnav {
+        background-color: black;
+      }
+      .div {
+        padding-top: 5px;
+        padding-left:20px;
+      }
+      .h1 {
+        font-size: 60px;
+      }
+      .pp {
+        background-color: rgba(0, 0, 0, 0.555);
+      }
+      .form {
+        font-size: 19px;
+        width: 420px;
+        background-color: rgba(0, 0, 0, 0.555);
+      }
+      input[type=text], input[type=email], textarea {
+        width: 90%;
+        font-size: 15px;
+      }
+      input[type=submit], input[type=reset] {
+        height: 30px;
+        width: 90px;
+        font-size: 20px;
+      }
+    }
+    @media screen and (min-width: 501px) and (max-width: 700px) {
+      .div {
+        padding-left:30px;
+        padding-top: 10px;
+      }
+      .h1 {
+        font-size: 70px;
+      }
+      .form {
+        font-size: 19px;
+        width: 450px;
+        background-color: rgba(0, 0, 0, 0.555);
+      }
+      input[type=text], input[type=email], textarea {
+        width: 95%;
+        font-size: 15px;
+      }
+      input[type=submit], input[type=reset] {
+        height: 30px;
+        width: 90px;
+      }
+    }    
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active" style="float: right; padding-right: 5vw;">Contact</a>
+  </div>
+  <div class="div">
+    <h1 class="h1">Let's Talk.</h1> 
+    <p class="pp">Get in touch via the form below, or by emailing <a href="mailto:hello@benedict.at" class="mailto">hello@benedict.at</a>.</p>
+  </div>
+  <form class="form div">
+    <label class="label">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" class="box" required>
+    <br><br><label class="label">Email address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" class="box" required>
+    <br><br><label class="label">Message: </label><br>
+    <textarea name="message"  placeholder="Enter your message" class="textarea"></textarea>
+    <br><br><input type="Submit" value="Submit">
+    <span style="padding-left: 30px;"><input type="Reset" value="Reset"></span>
+  </form>
+  <div class="hero-image">
+    <div class="hero-text">
+      <p style="font-size: 30px;">Thank you for contacting</p>
+    </div>
+  </div>
+</body>
+</html>
+    
+     
+    
+
+</body>
+</html>

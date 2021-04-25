@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Benedict Cumberbatch - Work</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url(images/photoshopped-mobile.jpg);
+    background-position: bottom right;
+    max-width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .quot {
+    color: rgb(206, 200, 200);
+    height: 550px;
+    padding-left: 100px;
+    padding-top: 200px;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .div {
+    opacity: 0.95;
+  }
+  .leftcolumn {   
+    float: left;
+    width: 50%;
+  }
+  .rightcolumn {
+    float: right;
+    width: 50%;
+  }
+  .fakeimg {
+    background-color: transparent;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+  }
+  .text {
+    background-color: transparent;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding-top: 90px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+  }
+  .atonement {
+    height: 650px;
+  }
+  .strange {
+    height: 540px;
+  }
+  .card {
+    background-color: transparent;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  img {
+    width: 50%;
+  }
+  @media screen and (max-width: 350px) {
+    body {
+      background-position-y: 180px;
+      background-position-x: 10px;
+      background-size: 100%;
+    }
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+    .topnav {
+      background-color: black;
+    }
+    .quot {
+      height: 200px;
+      padding-left: 10px;
+      padding-top: 50px;
+      font-size: 12px;
+      background-color: rgba(0, 0, 0, 0.555);
+    }
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .fakeimg {
+      height: 250px;
+    }
+    .text {
+      height: 10px;
+      padding-top: 0px;
+    }
+    .atonement {
+      height: 310px;
+    }
+    .atonementtext {
+      height: 10px;
+    }
+    .strange {
+      height: 260px;
+    }
+    .strangetext {
+      height: 10px;
+    }
+    img {
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 351px) and (max-width: 404px) {
+    body {
+      background-position-y: 180px;
+      background-position-x: -50px;
+    }
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+    .topnav {
+      background-color: black;
+    }
+    .quot {
+      height: 200px;
+      padding-left: 10px;
+      padding-top: 50px;
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.555);
+    }
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .fakeimg {
+      height: 290px;
+    }
+    .text {
+      height: 20px;
+      padding-top: 10px;
+    }
+    .atonement {
+      height: 370px;
+    }
+    .atonementtext {
+      height: 10px;
+    }
+    .strange {
+      height: 300px;
+    }
+    .strangetext {
+      height: 10px;
+    }
+    img {
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 405px) and (max-width: 500px) {
+    body {
+      background-position-y: 180px;
+    }
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+    .topnav {
+      background-color: black;
+    }
+    .quot {
+      height: 200px;
+      padding-left: 10px;
+      padding-top: 50px;
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.555);
+    }
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .fakeimg {
+      height: 350px;
+    }
+    .text {
+      height: 50px;
+      padding-top: 40px;
+    }
+    .atonement {
+      height: 450px;
+    }
+    .atonementtext {
+      height: 30px;
+    }
+    .strange {
+      height: 370px;
+    }
+    .strangetext {
+      height: 30px;
+    }
+    img {
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 501px) and (max-width: 700px) {
+    .quot {
+      height: 350px;
+      padding-left: 20px;
+      padding-top: 100px;
+      font-size: 25px;
+      background-color: rgba(0, 0, 0, 0.555);
+    }
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .fakeimg {
+      height: 420px;
+    }
+    .text {
+      height: 100px;
+    }
+    .atonement {
+      height: 520px;
+    }
+    .atonementtext {
+      height: 40px;
+    }
+    .strange {
+      height: 440px;
+    }
+    .strangetext {
+      height: 50px;
+    }
+    img {
+      width: 40%;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="work.html" class="active">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" style="float: right; padding-right: 5vw;">Contact</a>
+  </div>
+  <div class="quot">Looking for happiness is a sure way to sadness, I think.<br>You have to take each moment as it comes.</div>
+  <div class="div" style="background-color: #24393e;">
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="text">Star Trek Into Darkness</div>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="fakeimg"><img src="images/star-trek-into-darkness-photoshopped.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div" style="background-color: #2f3849;">
+    <div class="row">
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="text">Black Mass</div>
+        </div>
+      </div>
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="fakeimg"><img src="images/black-mass-photoshopped.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div" style="background-color: #3d3137;">
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="text atonementtext">Atonement</div>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="fakeimg atonement"><img src="images/atonement-photoshopped.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div" style="background-color: #3a110f;">
+    <div class="row">
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="text">Tinker Tailor Soldier Spy</div>
+        </div>
+      </div>
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="fakeimg"><img src="images/tinker-tailor-soldier-spy-photoshopped.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div" style="background-color: #6d320b;">
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="text strangetext">Doctor Strange</div>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="fakeimg strange"><img src="images/dr-strange.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div" style="background-color: #1c2632;">
+    <div class="row">
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="text">1917</div>
+        </div>
+      </div>
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="fakeimg"><img src="images/1917.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div" style="background-color: #686264;">
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="text">The Imitation Game</div>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="fakeimg"><img src="images/imitation-game-photoshopped.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div" style="background-color: #0e292e;">
+    <div class="row">
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="text">The Hobbit</div>
+        </div>
+      </div>
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="fakeimg"><img src="images/hobbit-photoshopped.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div" style="background-color: #194b66;">
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="text">Sherlock</div>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="fakeimg"><img src="images/sherlock-photoshopped.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
